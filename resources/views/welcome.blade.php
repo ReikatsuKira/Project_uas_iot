@@ -425,6 +425,16 @@
             color: var(--color-text-primary);
         }
 
+        .metric-action {
+            margin-top: 1rem;
+        }
+
+        .metric-action a {
+            font-size: 0.75rem;
+            padding: 0.35rem 0.75rem;
+        }
+
+
         /* Responsive */
         @media (max-width: 768px) {
             .main-container {
@@ -513,7 +523,12 @@
                 <div class="metric-threshold">
                     <div>Normal: <span id="gasNormalDisplay">500</span></div>
                     <div>Darurat: <span id="gasDaruratDisplay">600</span></div>
-                </div>
+                    <div class="metric-action">
+                    <a href="/detail/gas" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-eye me-1"></i> Detail
+                    </a>
+                    </div>
+                    </div>
             </div>
 
             <!-- Waste Height Card -->
@@ -526,19 +541,10 @@
                 <div class="metric-unit">CM</div>
                 <div class="metric-threshold">
                     <div>Status: <span id="sampahStatus">-</span></div>
-                </div>
-            </div>
-
-            <!-- System Status Card -->
-            <div class="metric-card">
-                <div class="metric-icon">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
-                <div class="metric-label">Sistem Health</div>
-                <div class="metric-value" id="systemHealth">100</div>
-                <div class="metric-unit">%</div>
-                <div class="metric-threshold">
-                    <div>Semua Operasional</div>
+                     <div class="metric-action">
+                    <a href="/detail/sampah" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-eye me-1"></i> Detail</a>
+                    </div>
                 </div>
             </div>
 
@@ -552,6 +558,11 @@
                 <div class="metric-unit">Orang</div>
                 <div class="metric-threshold">
                     <div id="userStatus">Tidak ada pengguna</div>
+                        <div class="metric-action">
+                        <a href="/detail/pengguna" class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-eye me-1"></i> Detail
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -583,7 +594,7 @@
             </div>
         </div>
 
-        <!-- User Log Table -->
+        <!-- User Log Table
         <div class="card">
             <div class="card-header">
                 <h5 class="card-title">
@@ -613,7 +624,7 @@
                 </div>
             </div>
         </div>
-
+ -->
         <!-- Settings Section -->
         <div class="card">
             <div class="card-header">
